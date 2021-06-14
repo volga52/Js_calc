@@ -6,8 +6,31 @@ const pow = (a, n) => {
     }
 
     return result;
+};
+
+const add = (a, b) => {
+    return a + b;
+};
+
+const sub = (a, b) => {
+    return a - b;
+};
+
+const mult = (a, b) => {
+    return a * b;
+};
+
+const divition = (a, b) => {
+    if(b === 0) {
+        return 'null';
+    }
+    return a / b;
 }
 
 module.exports = {
-    pow: pow
+    pow: pow,
+    add: add,
+    sub: sub,
+    mult: mult,
+    divition: divition,
 }
